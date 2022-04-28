@@ -24,7 +24,7 @@ dotenv.config()
 
 console.log(process.env.EMAIL_ID)
 // The port we want our project to run on
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Express should add our path
 app.use(express.static("public"));
